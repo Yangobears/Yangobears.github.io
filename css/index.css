@@ -1,0 +1,178 @@
+/* Overall */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Hover over image transition from grayscale to color */
+
+img {
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-filter: grayscale(100%);
+    -moz-transition: .5s ease-in-out;
+    -o-filter: grayscale(100%);
+    -o-transition: .5s ease-in-out;
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-filter: grayscale(0%);
+    -moz-transition: .5s ease-in-out;
+    -o-filter: grayscale(0%);
+    -o-transition: .5s ease-in-out;
+}
+
+
+/* Header title */
+
+.header__title {
+    text-align: right;
+    font-family: 'Open sans', sans-serif;
+}
+
+
+/* The responsive menu drop */
+
+.header__menu {
+    display: none;
+}
+
+
+/* Navigation list */
+
+.nav__list a {
+    color: black;
+    font-size: 24px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.nav__item {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    font-family: 'Catamaran', sans-serif;
+    background-color: white;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+    font-family: 'Catamaran', sans-serif;
+    text-align: right;
+    font-size: 2em;
+}
+
+.what {
+    margin: 0;
+    margin-top: 1em;
+}
+
+
+/* Featured work */
+
+.work-container {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.work-container a {
+    color: grey;
+}
+
+.proj img {
+    margin-bottom: 20px;
+}
+
+
+/* For smaller viewport */
+
+@media screen and (max-width: 768px) {
+    /* Logo */
+    .logo {
+        height: 50px;
+        margin: 10px;
+    }
+    /* Header title */
+    .header__title {
+        margin: 10px;
+        text-align: center;
+    }
+    .who {
+        font-size: 2.5em;
+    }
+    .what {
+        margin: 0;
+        margin-top: 0.8em;
+        font-size: 1em;
+    }
+    /* Header menu icon */
+    .header__menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+    }
+    .header__menu svg {
+        width: 32px;
+        margin-right: 20px;
+    }
+    /* Navigation list */
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+    }
+    .nav__list {
+        width: 100%;
+        height: 100%;
+    }
+    .nav__item {
+        display: list-item;
+        height: 25%;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: center;
+    }
+    .nav__item a {
+        /*margin-top: 15px;*/
+        line-height: 60px;
+        color: black;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .nav__item a:hover {
+        text-decoration: underline;
+    }
+    /* Featured work */
+    .proj {
+        font-size: 1.3em;
+    }
+    .work-container {
+        text-align: center;
+    }
+}
